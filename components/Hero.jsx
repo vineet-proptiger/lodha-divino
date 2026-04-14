@@ -9,6 +9,9 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
 const slides = [heroImages.banner, heroImages.banner2]
 
+const BRAND = 'var(--color-primary)'
+const BRAND_DARK = 'var(--color-primary-dark)'
+
 const Hero = ({ setIsOpen }) => {
   const [current, setCurrent] = useState(0)
 
@@ -63,7 +66,7 @@ const Hero = ({ setIsOpen }) => {
 
           {/* ── Top Banner ── */}
           <div style={{
-            background: 'linear-gradient(135deg, #111827 0%, #1f2937 100%)',
+            background: `linear-gradient(135deg, ${BRAND_DARK} 0%, ${BRAND} 100%)`,
             color: '#fff',
             textAlign: 'center',
             padding: '11px 16px',
@@ -73,20 +76,38 @@ const Hero = ({ setIsOpen }) => {
             {/* shimmer line */}
             <div style={{
               position: 'absolute', top: 0, left: 0, right: 0, height: '2px',
-              background: 'linear-gradient(90deg, transparent, var(--color-gold), transparent)',
+              background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)',
             }} />
             <p style={{
               fontFamily: F_JOST, fontSize: '13px', fontWeight: '700',
               letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0,
               color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px'
             }}>
-              <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'var(--color-gold)' }} />
+              <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
               Booking Window Opens
-              <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'var(--color-gold)' }} />
+              <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
             </p>
           </div>
 
           <div className="p-4 flex flex-col gap-3">
+            {/* ── New Launch Badge ── */}
+            <div className="flex justify-center -mt-2 mb-1" data-aos="zoom-in" data-aos-delay="400">
+              <span style={{
+                background: 'var(--color-gold-bg)',
+                color: 'var(--color-gold)',
+                padding: '4px 14px',
+                borderRadius: '50px',
+                fontSize: '11px',
+                fontWeight: '700',
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+                border: '1px solid var(--color-gold-light)',
+                boxShadow: '0 2px 8px rgba(181,135,40,0.12)',
+                fontFamily: F_JOST
+              }}>
+                New Launch
+              </span>
+            </div>
 
             {/* ── Project Identity ── */}
             <div style={{ textAlign: 'center', paddingBottom: '10px', borderBottom: '1px solid #f0f0f0' }}>
