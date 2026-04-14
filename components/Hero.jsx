@@ -177,7 +177,7 @@ const Hero = ({ setIsOpen }) => {
                 fontFamily: F_SANS, fontSize: '13px', color: '#374151',
                 margin: '0 0 2px', fontWeight: '600',
               }}>
-                Luxurious 2, 2.5, 3, 3.5, 4.5 BHK &amp; Offices
+                Luxurious 2, 3, 4 BHK &amp; Offices
               </p>
               <p style={{
                 fontFamily: F_SANS, fontSize: '11px', color: '#9ca3af',
