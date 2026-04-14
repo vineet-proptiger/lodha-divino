@@ -198,7 +198,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '22px' }}>
               {[
                 { value: '15+', label: 'Years of Experience' },
-                { value: '20+', label: 'Projects Delivered' },
+                { value: '100+', label: 'Projects Delivered' },
                 { value: '10000+', label: 'Happy Families' },
               ].map((stat, i) => (
                 <div key={i} style={{
