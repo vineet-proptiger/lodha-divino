@@ -21,7 +21,7 @@ const units = [
   {
     type: "3 BHK",
     size: "1227 SqFt",
-    price: "₹ 6.52 Cr Onwards",
+    price: "On Request",
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [
@@ -32,9 +32,9 @@ const units = [
     isPopular: true,
   },
   {
-    type: "4 BHK With Study",
+    type: "4 BHK",
     size: "1727 SqFt",
-    price: "₹ 9.44 Cr Onwards",
+    price: "On Request",
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [

@@ -192,7 +192,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
           {/* White Body */}
           <div style={{ padding: '24px 28px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <p style={{ color: '#555', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '14px', margin: '0 0 20px' }}>
-              One of India's leading real estate firms, the Lodha Group is renowned for building urban dream homes that offer refined living. The developer caters to all segments, from luxury to budget residences and has built iconic landmarks all across Mumbai, Thane, and Navi Mumbai. Lodha properties are known to feature quality interiors, state-of-the-art amenities, vast open spaces, and manicured green landscapes. A few of their standout properties are Lodha World Towers in Lower Parel, Lodha Palava in Dombivli, Lodha Crown in Thane, and Lodha Bellagio in Powai.</p>
+              Renowned for shaping some of India&apos;s most iconic developments, Lodha Group stands as a symbol of excellence, innovation, and trust. With a legacy of delivering landmark residences, the brand continues to redefine luxury living through design, craftsmanship, and an unwavering commitment to quality.</p>
 
             {/* Stats */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '22px' }}>

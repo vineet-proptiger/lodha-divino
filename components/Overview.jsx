@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
 import { getGeo, buildTrackingFields } from '../lib/formMeta'
@@ -11,9 +11,9 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SERIF = 'var(--font-serif), Cormorant Garamond, serif'
 
-const PREVIEW_TEXT = `Lodha Divino - Live exceptional with a flourishing lifestyle at Matunga. The premium 2,3 & 4 BHK deck apartments come with green open spaces, international architectural design & features. By living at the tallest tower of Matunga, you benefit beautiful & sprawling landscape for the highest standard of lifestyle. To make your daily life a celebration, enjoy choices such as - multipurpose lawns, adventure areas for kids, outdoor cinema, clubhouse, gym, cafe, indoor games, leisure walks, luxury poolside & lot more,Get seamless connectivity to all the conveniences. Lodha Divino is closeby to posh infrastructure such as Hinduja Hospital, Ruia College & Shishuvan School.`
+const PREVIEW_TEXT = `Set within the legacy neighbourhood of Matunga East, Lodha Divino is a celebration of heritage, connectivity, and elevated urban living. This distinguished address places you moments away from Mumbai's most prominent commercial and lifestyle destinations, including Dadar, Sion, and the prestigious Bandra-Kurla Complex.`
 
-const MORE_TEXT = `  To make your city travel super easy, the Eastern Express Highway, Kings Circle Flyover, and the Matunga & Kings Circle Railway Stations are a short drive away. Within 20 minutes drive you can reach two major landmarks - BKC & Lower Parel. So, make your choice an exceptional one & choose a grand residence - Lodha Divino!`
+const MORE_TEXT = ` With seamless access to key arterial routes such as the Eastern Express Highway and proximity to major railway networks, the development ensures effortless connectivity across South Mumbai and beyond. Each residence is thoughtfully designed to offer a rare sense of openness within the city, where generous proportions, intelligent layouts, and refined finishes create a living experience defined by comfort and quiet sophistication.`
 
 const inputStyle = {
   width: '100%',
@@ -181,7 +181,6 @@ const EarlyForm = () => {
 }
 
 const Overview = () => {
-  const [expanded, setExpanded] = React.useState(false)
   return (
     <section id="overview" className="!pt-1 !pb-4 sm:!py-10" style={{
       background: '#f8f9fa',
@@ -268,28 +267,15 @@ const Overview = () => {
                   fontSize: '14px', margin: 0, flex: 1,
                   textAlign: 'justify',
                 }}>
-                  {PREVIEW_TEXT}
-                  {expanded && MORE_TEXT}
+                  {PREVIEW_TEXT}{MORE_TEXT}
                   {' '}
-                  <button
-                    onClick={() => setExpanded(e => !e)}
-                    style={{
-                      background: 'none', border: 'none',
-                      cursor: 'pointer', padding: 0,
-                      display: 'inline-flex', alignItems: 'center', gap: '3px',
-                      color: 'var(--color-gold)', fontFamily: F_JOST,
-                      fontSize: '13px', fontWeight: '700', letterSpacing: '0.03em',
-                      verticalAlign: 'middle',
-                    }}
-                  >
-                    {expanded ? 'Read Less' : 'Read More'}
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-                      stroke="var(--color-gold)" strokeWidth="2.5"
-                      strokeLinecap="round" strokeLinejoin="round"
-                      style={{ transform: expanded ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }}>
-                      <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                  </button>
+                  <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                    style={{ display: 'inline', verticalAlign: 'middle', marginLeft: '2px' }}>
+                    <path d="M22 24C25.314 24 28 21.314 28 18s-2.686-6-6-6v-4l-4 4c0 3.314 2.686 6 6 6zm-12 0C13.314 24 16 21.314 16 18s-2.686-6-6-6v-4l-4 4c0 3.314 2.686 6 6 6z"
+                      fill="var(--color-gold)" opacity="0.15" />
+                    <path d="M22 24C25.314 24 28 21.314 28 18s-2.686-6-6-6v-4l-4 4c0 3.314 2.686 6 6 6zm-12 0C13.314 24 16 21.314 16 18s-2.686-6-6-6v-4l-4 4c0 3.314 2.686 6 6 6z"
+                      fill="none" stroke="var(--color-gold)" strokeWidth="1.8" opacity="0.4" />
+                  </svg>
                 </p>
               </div>
 

@@ -10,7 +10,7 @@ const plans = [
   { label: 'Site Master Plan',   img: masterplanImages.masterPlan },
   { label: '2 BHK Floor Plan',   img: masterplanImages.bhk2 },
   { label: '3 BHK Floor Plan',   img: masterplanImages.bhk3 },
-  { label: '4.5 BHK Floor Plan', img: masterplanImages.bhk45 },
+  { label: '4 BHK Floor Plan',   img: masterplanImages.bhk45 },
 ]
 
 const MasterPlan = ({ setIsOpen }) => {

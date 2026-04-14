@@ -84,7 +84,7 @@ const Hero = ({ setIsOpen }) => {
               color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px'
             }}>
               <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
-              Booking Window Opens
+              Now Inviting Expressions of Interest
               <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
             </p>
           </div>
@@ -124,7 +124,7 @@ const Hero = ({ setIsOpen }) => {
                 letterSpacing: '0.01em', lineHeight: 1.5
               }}
                 data-aos="fade-up" data-aos-delay="280">
-                At Bhaudaji Road, Matunga, Mumbai By Lodha Group
+                Bhaudaji Road, Matunga East, Mumbai · By Lodha Group
               </p>
               {/* ── Google Rating ── */}
               {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
@@ -161,30 +161,49 @@ const Hero = ({ setIsOpen }) => {
               ))}
             </div>
 
-            {/* ── Highlights Box (dashed border) ── */}
+            {/* ── Privileged Launch Advantages ── */}
             <div style={{
               background: 'linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%)',
               borderRadius: '10px',
-              padding: '6px 14px',
+              padding: '8px 14px',
               border: '2px dashed rgba(255,255,255,0.45)',
               boxShadow: '0 6px 20px var(--color-shadow-inner)',
             }} data-aos="fade-up" data-aos-delay="400">
+              <p style={{
+                fontFamily: F_JOST, fontSize: '10px', color: 'rgba(255,255,255,0.75)',
+                margin: '0 0 4px', fontWeight: '700', letterSpacing: '0.14em',
+                textTransform: 'uppercase', textAlign: 'center',
+              }}>
+                Privileged Launch Advantages
+              </p>
               {[
-                'Get Guaranteed Best Rates',
-                'Tallest Tower Of Matunga',
-                'Homes With Huge Decks',
+                'Early Access for Discerning Buyers',
+                'Pre-Launch Pricing Privileges',
+                'Priority Selection of Premium Residences',
+                'Limited-Time Ownership Benefits',
               ].map((item, i, arr) => (
                 <div key={i}>
                   <p style={{
-                    fontFamily: F_JOST, fontSize: '13px', color: '#fff',
-                    margin: 0, fontWeight: '700', letterSpacing: '0.01em',
-                    padding: '8px 0', textAlign: 'center',
-                  }}>{item}</p>
+                    fontFamily: F_JOST, fontSize: '12px', color: '#fff',
+                    margin: 0, fontWeight: '600', letterSpacing: '0.01em',
+                    padding: '5px 0', textAlign: 'center',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
+                  }}>
+                    <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: 'rgba(255,255,255,0.7)', flexShrink: 0, display: 'inline-block' }} />
+                    {item}
+                  </p>
                   {i < arr.length - 1 && (
-                    <div style={{ borderTop: '1px dashed rgba(255,255,255,0.30)' }} />
+                    <div style={{ borderTop: '1px dashed rgba(255,255,255,0.25)' }} />
                   )}
                 </div>
               ))}
+              <p style={{
+                fontFamily: F_JOST, fontSize: '10px', color: 'rgba(255,255,255,0.6)',
+                margin: '6px 0 2px', fontWeight: '600', letterSpacing: '0.08em',
+                textAlign: 'center', textTransform: 'uppercase',
+              }}>
+                Reserved for a select few · An exclusive release with limited availability
+              </p>
             </div>
 
             {/* ── BHK & Pricing ── */}
@@ -198,7 +217,7 @@ const Hero = ({ setIsOpen }) => {
                 fontFamily: F_SANS, fontSize: '13px', color: '#374151',
                 margin: '0 0 2px', fontWeight: '600',
               }}>
-                Luxurious 2, 3, 4 BHK &amp; Offices
+                Lavish 2, 3 &amp; 4 Bed Residences
               </p>
               <p style={{
                 fontFamily: F_SANS, fontSize: '11px', color: '#9ca3af',

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 
-import { Waves, Dumbbell, UtensilsCrossed, Gamepad2, Film, CalendarDays, ChefHat, ConciergeBell, BookOpen } from 'lucide-react'
+import { BedDouble, MapPin, Building2, LayoutPanelLeft, Navigation, TrendingUp, Shield, Sparkles } from 'lucide-react'
 
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
@@ -10,28 +10,36 @@ const highlightIconProps = { size: 26, strokeWidth: 1.5 }
 
 const highlights = [
   {
-    text: 'Temperature-Controlled Pool',
-    icon: <Waves {...highlightIconProps} />,
+    text: 'Impeccably Designed 2, 3 & 4 Bed Residences',
+    icon: <BedDouble {...highlightIconProps} />,
   },
   {
-    text: 'State-of-the-Art Fitness Studio',
-    icon: <Dumbbell {...highlightIconProps} />,
+    text: 'A Prestigious Address in Matunga East',
+    icon: <MapPin {...highlightIconProps} />,
   },
   {
-    text: 'Private Mini-Theatre',
-    icon: <Film {...highlightIconProps} />,
+    text: 'A Refined High-Rise with Contemporary Design Language',
+    icon: <Building2 {...highlightIconProps} />,
   },
   {
-    text: '24/7 Dedicated Concierge',
-    icon: <ConciergeBell {...highlightIconProps} />,
+    text: 'Expansive Layouts with Premium Specifications',
+    icon: <LayoutPanelLeft {...highlightIconProps} />,
   },
   {
-    text: 'Rooftop Cafe & Lounge',
-    icon: <UtensilsCrossed {...highlightIconProps} />,
+    text: 'Seamless Access to BKC, Lower Parel & South Mumbai',
+    icon: <Navigation {...highlightIconProps} />,
   },
   {
-    text: 'Exclusive Games Arena',
-    icon: <Gamepad2 {...highlightIconProps} />,
+    text: 'Located within a High-Value, Future-Ready Micro-Market',
+    icon: <TrendingUp {...highlightIconProps} />,
+  },
+  {
+    text: 'A Secure, Gated Environment with Best-in-Class Infrastructure',
+    icon: <Shield {...highlightIconProps} />,
+  },
+  {
+    text: 'World-Class Amenities for an Elevated Lifestyle',
+    icon: <Sparkles {...highlightIconProps} />,
   },
 ]
 
@@ -137,7 +145,7 @@ const Highlights = ({ setIsOpen }) => (
       </div>
 
       {/* 3-column card grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {highlights.map((item, idx) => (
           <HighlightCard key={idx} item={item} idx={idx} setIsOpen={setIsOpen} />
         ))}

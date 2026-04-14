@@ -20,7 +20,7 @@ const Footer = () => (
       </div>
       <p style={{ fontSize: '15px', color: '#bbb', fontFamily: F_SANS, lineHeight: 1.8, marginBottom: '32px', textAlign: 'justify' }}
         data-aos="fade-in" data-aos-delay="100">
-        Lodha Divino is a landmark luxury residential development located at Bhaudaji Road, Matunga, Mumbai — the tallest tower of Matunga. Offering premium 2, 2.5, 3, 3.5 &amp; 4.5 BHK deck apartments with sprawling landscapes, international architectural design and world-class amenities including multipurpose lawns, outdoor cinema, clubhouse, gym, luxury poolside &amp; lot more. Seamlessly connected to BKC, Lower Parel, Eastern Express Highway and major railway stations — Lodha Divino is crafted for those seeking an exceptional standard of living in Mumbai&apos;s most premium corridor.
+        Lodha Divino is a landmark luxury residential development located at Bhaudaji Road, Matunga East, Mumbai. Offering lavish 2, 3 &amp; 4 Bed Residences with sprawling landscapes, contemporary architectural design and world-class amenities including multipurpose lawns, outdoor cinema, luxury clubhouse with cafe, gymnasium, luxury poolside &amp; lot more. Seamlessly connected to BKC, Eastern Express Highway, Sion Metro Station and major landmarks — Lodha Divino is crafted for those seeking an exceptional standard of living in Mumbai&apos;s most prestigious corridor.
       </p>
       {/* <div style={{ borderTop: '1px solid #333', marginBottom: '24px' }} /> */}
     </div>
@@ -31,14 +31,14 @@ const Footer = () => (
       </p>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
         <Link href="/privacy-policy" style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_SANS }}>
-          Disclaimer &amp; Privacy Policy
+          Privacy Policy
         </Link>
       </div>
     </div>
 
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '12px 24px 20px', textAlign: 'center' }}>
-      <p style={{ fontSize: '10.5px', color: '#555', fontFamily: F_SANS, lineHeight: 1.7, textAlign: 'justify' }}>
-        <strong style={{ color: '#777' }}>Disclaimer:</strong> This is not the official website of the developer. The information depicted herein, including master plans, floor plans, furniture layout, fittings, illustrations, specifications, designs, dimensions, rendered views, colours, amenities and facilities etc., are subject to change without notification as may be required by the relevant authorities or the Developer&apos;s architect. This advertisement is an invitation to offer and shall not be construed as an offer or contract. * Prices subject to change without notice. All taxes extra as applicable.
+      <p style={{ fontSize: '10.5px', color: '#999', fontFamily: F_SANS, lineHeight: 1.7, textAlign: 'justify' }}>
+        <strong style={{ color: '#bbb' }}>Disclaimer:</strong> This is not the official website of the developer. The information depicted herein, including master plans, floor plans, furniture layout, fittings, illustrations, specifications, designs, dimensions, rendered views, colours, amenities and facilities etc., are subject to change without notification as may be required by the relevant authorities or the Developer&apos;s architect. This advertisement is an invitation to offer and shall not be construed as an offer or contract. * Prices subject to change without notice. All taxes extra as applicable.
       </p>
     </div>
   </footer>
