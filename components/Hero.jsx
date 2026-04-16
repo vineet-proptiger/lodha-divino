@@ -84,7 +84,7 @@ const Hero = ({ setIsOpen }) => {
               color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px'
             }}>
               <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
-              New Launch With Near Possession
+              Unlock Elite Ownership Advantages
               <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
             </p>
           </div>
@@ -105,7 +105,7 @@ const Hero = ({ setIsOpen }) => {
                 boxShadow: '0 2px 8px rgba(181,135,40,0.12)',
                 fontFamily: F_JOST
               }}>
-                New Launch
+                Near Possession
               </span>
             </div>
 
