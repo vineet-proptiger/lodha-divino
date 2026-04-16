@@ -84,7 +84,7 @@ const Hero = ({ setIsOpen }) => {
               color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px'
             }}>
               <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
-              Now Inviting Expressions of Interest
+              New Launch With Near Possession
               <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
             </p>
           </div>
@@ -177,10 +177,10 @@ const Hero = ({ setIsOpen }) => {
                 Privileged Launch Advantages
               </p>
               {[
-                'Early Access for Discerning Buyers',
-                'Pre-Launch Pricing Privileges',
-                'Priority Selection of Premium Residences',
-                'Limited-Time Ownership Benefits',
+                'Ultra-Luxury Tower at Lodha Divino',
+                'Avail Exclusive Launch benefits',
+                '35,000+ Sq. ft. of recreational Area',
+                'Large Integrated Development',
               ].map((item, i, arr) => (
                 <div key={i}>
                   <p style={{
