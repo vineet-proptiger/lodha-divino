@@ -45,7 +45,7 @@ const Amenities = ({ setIsOpen }) => {
           {amenityImages.map((item, idx) => (
             <div
               key={idx}
-              className={`${idx < 4 ? 'lg:col-span-3' : 'lg:col-span-4'}`}
+              className="lg:col-span-3"
               onClick={() => setLightbox(idx)}
               onMouseEnter={() => setHovered(idx)}
               onMouseLeave={() => setHovered(null)}

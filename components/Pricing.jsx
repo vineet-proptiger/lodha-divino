@@ -12,7 +12,7 @@ const units = [
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [
-      "Limited Pre-Launch Inventory",
+      "Limited Launch Inventory",
       "Attractive Payment Plan",
       "Premium Residence"
     ],
@@ -25,7 +25,7 @@ const units = [
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [
-      "Limited Pre-Launch Inventory",
+      "Limited Launch Inventory",
       "Attractive Payment Plan",
       "Premium Residence"
     ],
@@ -38,7 +38,7 @@ const units = [
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [
-      "Limited Pre-Launch Inventory",
+      "Limited Launch Inventory",
       "Attractive Payment Plan",
       "Premium Residence"
     ],
