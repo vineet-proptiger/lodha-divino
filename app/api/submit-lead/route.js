@@ -40,6 +40,10 @@ export async function POST(request) {
     if (phone.length > 10) phone = phone.slice(-10)
     const email = get('email')
 
+    if (phone.length > 0 && phone.length < 10) {
+      return Response.json({ status: false, msg: 'Invalid phone number' })
+    }
+
     if (phone === '' && email === '') {
       return Response.json({ status: false })
     }
